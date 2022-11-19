@@ -15,7 +15,7 @@ import javax.persistence.Table;
 @Table(name = "tb_course")
 public class Course implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -61,11 +61,11 @@ public class Course implements Serializable {
 		this.imgUri = imgUri;
 	}
 
-	public String getImgGryUri() {
+	public String getImgGrayUri() {
 		return imgGrayUri;
 	}
 
-	public void setImgGryUri(String imgGrayUri) {
+	public void setImgGrayUri(String imgGrayUri) {
 		this.imgGrayUri = imgGrayUri;
 	}
 

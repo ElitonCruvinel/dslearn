@@ -32,7 +32,7 @@ public class Resource implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "offer_id")
 	private Offer offer;
-	
+
 	@OneToMany(mappedBy = "resource")
 	private List<Section> sections = new ArrayList<>();
 	
